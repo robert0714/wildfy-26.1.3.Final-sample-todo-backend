@@ -1,0 +1,11 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: sm-wildfly 
+spec:
+  selector:
+    matchLabels:
+      tier: frontend
+  endpoints:
+  - path: /metrics/
+    port: wildfly-ex-m
