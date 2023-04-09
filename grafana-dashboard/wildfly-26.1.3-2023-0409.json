@@ -5639,7 +5639,7 @@
   "schemaVersion": 34,
   "style": "dark",
   "tags": [
-    "keycloak x",
+    "wildfly",
     "quarkus",
     "java"
   ],
@@ -5693,11 +5693,7 @@
         "useTags": false
       },
       {
-        "current": {
-          "selected": false,
-          "text": "wildfly-app-service",
-          "value": "wildfly-app-service"
-        },
+        "current": {},
         "datasource": {
           "uid": "$PROMETHEUS_DS"
         },
