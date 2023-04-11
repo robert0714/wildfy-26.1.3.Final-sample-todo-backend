@@ -198,13 +198,17 @@
                                     <artifactId>wildfly-datasources-galleon-pack</artifactId>
                                     <version>${version.wildfly-datasources-galleon-pack}</version>
                                 </feature-pack>
-                            </feature-packs>
-                            <cloud/>
+                            </feature-packs>                            
                             <layers>
                                 <layer>cloud-server</layer>
                                 <layer>postgresql-datasource</layer>
                                 <layer>web-console</layer>
-                                <layer>microprofile-metrics</layer>
+				<layer>microprofile-metrics</layer>
+                                <layer>microprofile-health</layer>
+                            </layers>
+                            <cloud>
+				<type>kubernetes</type>
+			    </cloud>
                             </layers>
                             <cli-sessions>
                                 <cli-session>
